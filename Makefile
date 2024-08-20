@@ -13,13 +13,13 @@ compose-lint:
 	docker-compose run app make lint
 
 compose-lint-ci:
-	docker-compose -f docker-compose.yml run app make lint
+	docker compose -f docker-compose.yml run app make lint
 
 compose-test:
 	docker-compose run app make test
 
 compose-test-ci:
-	docker-compose -f docker-compose.yml run app make test
+	docker compose -f docker-compose.yml run app make test
 
 compose-console:
 	docker-compose run --rm app bash
