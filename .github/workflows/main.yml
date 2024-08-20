@@ -29,6 +29,11 @@ jobs:
           load: true
           tags: ${{ env.TEST_TAG }}
 
+      - name: Check Docker and Docker Compose versions
+        run: |
+          docker --version
+          docker-compose --version
+
       - run: make compose-test-ci
       - run: make compose-lint-ci
 
