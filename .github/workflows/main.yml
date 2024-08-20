@@ -6,7 +6,7 @@ on:
       - 'main'
 
 env:
-  TEST_TAG: ruslan0688/devops-example-app:test
+  TEST_TAG: ruslan0688/devops-example-app
 
 jobs:
   docker:
